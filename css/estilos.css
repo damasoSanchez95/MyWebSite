@@ -229,8 +229,6 @@ width: 500px;
     border-radius: 5px;
 }
 
-
-
 .courses {
     margin:10px;
     width: 480px;
@@ -238,6 +236,7 @@ width: 500px;
     border-radius: 10px;
     overflow: hidden;
     background: #f4fbff;
+    
 }
 
 .courses-list-title{
@@ -250,14 +249,14 @@ width: 500px;
 }
 
 .courses img{
-    width: 480px;
-    height: 200px;
-    object-fit: cover;
+    margin-left: 40px;
+    width: 400px;
+    height: 180px;
+    
 }
 
 .courses-detail{
     margin: 20px 40px;
-    margin-top: -40px;
     background-color: white;
     position: relative;
     padding: 20px;
@@ -275,52 +274,6 @@ width: 500px;
     color: #056fff;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact{
     background-color: #056fff;
