@@ -34,10 +34,19 @@ header{
     height: inherit;
 }
 
-ol,ul {
+.header ol,ul {
     margin:0;
     padding: 0;
     list-style: none;
+}
+
+.portfolio ul {
+    margin-left:20px;
+    list-style-type: square;
+}
+
+.intern-list li{
+    list-style-type: circle;
 }
 
 figure {
@@ -51,9 +60,16 @@ body{
 }
 
 
-h1,,h3,h4,h5,h6{
+h1,h3,h4,h5,h6{
     font-family: 'Fjalla one', sans-serif;
     font-weight: normal;
+}
+
+.hero h3{
+    font-family: 'Fjalla one', sans-serif;
+    font-weight: normal;
+    color: white;
+
 }
 
 h1{
@@ -84,7 +100,7 @@ h2{
     padding: 20px;
 }
 
-.project {
+.company {
    /* border-top: 10px solid red;
     border-right: 10px solid red;
     border-left: 10px solid red;
@@ -100,33 +116,33 @@ h2{
     justify-content: space-between;
 }
 
-.project strong{
+.company strong{
     font-family: 'Fjalla one', sans-serif;
 }
 
-.project-course{
+.company-course{
     margin:10px 0;
 }
 
-.project-date{
+.company-date{
     margin: 10px 0;
 }
 
-.project-url{
+.company-url{
     margin: 10px 0;
 }
 
-.project-description{
+.company-description{
     font-size: 20px;
 }
 
-.project-title{
+.company-title{
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.project-details{
+.company-details{
 width: 500px;
 }
 
@@ -148,7 +164,7 @@ width: 500px;
     object-fit: cover;
 }
 
-.project-imageContainer{
+.company-imageContainer{
     width: 500px;
 }
 
@@ -168,7 +184,7 @@ width: 500px;
     color:white;
 }
 
-.event {
+.personalProject {
     margin:10px;
     width: 480px;
     flex-shrink: 0;
@@ -177,22 +193,22 @@ width: 500px;
     background: #f4fbff;
 }
 
-.event-list-title{
+.personalProject-list-title{
     margin-left: 20px;
 }
 
-.event-list{
+.personalProject-list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.event img{
+.personalProject img{
     width: 480px;
     height: 200px;
     object-fit: cover;
 }
 
-.event-detail{
+.personalProject-detail{
     margin: 20px 40px;
     margin-top: -40px;
     background-color: white;
@@ -201,17 +217,110 @@ width: 500px;
     text-align: center;
 }
 
-.event-description{
+.personalProject-description{
     text-align: left;
 }
 
-.event-url{
+.personalProject-url{
     border: 1px solid #056fff;
     padding: 5px 20px;
     text-decoration: none;
     color: #056fff;
     border-radius: 5px;
 }
+
+
+
+.courses {
+    margin:10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.courses-list-title{
+    margin-left: 20px;
+}
+
+.courses-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.courses-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.courses-description{
+    text-align: left;
+}
+
+.courses-url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact{
     background-color: #056fff;
@@ -288,4 +397,8 @@ width: 500px;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+.hero h3{
+    padding-right: 150px;
 }
