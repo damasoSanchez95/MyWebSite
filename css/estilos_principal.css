@@ -278,7 +278,7 @@ width: 500px;
 .contact{
     background-color: #056fff;
     color:white;
-    height: 150px;
+    height: 165px;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -324,6 +324,11 @@ width: 500px;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
+}
+
+.form-email h3,h5{
+    padding: 5px;
+    margin:4px 0px;
 }
 
 .form-email button{
