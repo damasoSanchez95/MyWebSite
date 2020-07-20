@@ -25,6 +25,8 @@ header{
     height: inherit;
 }
 
+
+
 .header ol {
     display:flex;
     height: inherit;
@@ -229,6 +231,11 @@ width: 500px;
     border-radius: 5px;
 }
 
+.personalProject-url:hover{
+    box-shadow: 2px 2px 2px 0px;
+    color:mediumblue;
+}   
+
 .courses {
     margin:10px;
     width: 480px;
@@ -275,6 +282,12 @@ width: 500px;
     border-radius: 5px;
 }
 
+.courses-url:hover{
+    box-shadow: 2px 2px 2px 0px;
+    color:mediumblue;
+
+}
+
 .contact{
     background-color: #056fff;
     color:white;
@@ -295,22 +308,22 @@ width: 500px;
 }
 
 .social-link.twitter{
-    background-image: url('../images/twitter_logo.png');
+    background-image: url('../../images/twitter_logo.png');
     background-size: 50px 50px;
 }
 
 .social-link.linkedln{
-    background-image: url('../images/linkedln_logo.png');
+    background-image: url('../../images/linkedln_logo.png');
     background-size: 50px 50px;
 }
 
 .social-link.github{
-    background-image: url('../images/github_logo.png');
+    background-image: url('../../images/github_logo.png');
     background-size: 50px 50px;
 }
 
 .social-link.instagram{
-    background-image: url('../images/instagram_logo.png');
+    background-image: url('../../images/instagram_logo.png');
     background-size: 50px 50px;
 }
 
@@ -319,11 +332,16 @@ width: 500px;
     border-style: solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
-    background-image:url('../images/envelope.svg');
+    background-image:url('../../images/envelope.svg');
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
+}
+
+.form-email input:hover{
+    box-shadow: 0 3px 6px 0px #20212447;
+    border-color: #dfe1e500;
 }
 
 .form-email h3,h5{
@@ -341,6 +359,12 @@ width: 500px;
     width: 100px;
     padding: 10px 0;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-email button:hover{
+    border-color:black;
+    color: black;
 }
 
 .form-email h3{
