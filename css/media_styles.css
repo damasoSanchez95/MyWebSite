@@ -5,7 +5,11 @@ header{
     justify-content: space-between;
     height: 70px;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
 }
 
 .header a{
@@ -154,7 +158,6 @@ width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -171,7 +174,6 @@ width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .footer img {
@@ -189,7 +191,6 @@ width: 500px;
     border-radius: 10px;
     overflow: hidden;
     background: #f4fbff;
-    flex-wrap: wrap;
 }
 
 .personalProject-list-title{
@@ -282,7 +283,6 @@ width: 500px;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .social{
@@ -360,9 +360,7 @@ width: 500px;
 }
 
 .container{
-    max-width: 1000px;
-    /*width: 100%;*/
-    flex:1; /*100% of width*/
+    width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -373,51 +371,4 @@ width: 500px;
 
 .hero h3{
     padding-right: 150px;
-}
-
-/*Desktop first: we start in the biggest MQ*/
-
-@media screen and (max-width: 1024px){
-
-    body{
-
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    .header{
-        display: block;
-        height: auto;
-    }
-
-    .header ol{
-        display: block;
-    }
-
-    .header ol li{
-        height: 50px;
-    }
-
-    .header a{
-        justify-content: center;
-    }
-
-    .header .logo{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px){
-
-    body{
-
-    }
-}
-
-@media screen and (max-width: 320px){
-
-    body{
-
-    }
 }

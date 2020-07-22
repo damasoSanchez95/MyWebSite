@@ -5,11 +5,7 @@ header{
     justify-content: space-between;
     height: 70px;
     align-items: center;
-}
-
-.header{
-    background-color: #1b2127;
-    color: white;
+    flex-wrap: wrap;
 }
 
 .header a{
@@ -158,6 +154,7 @@ width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -174,6 +171,7 @@ width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -191,6 +189,7 @@ width: 500px;
     border-radius: 10px;
     overflow: hidden;
     background: #f4fbff;
+    flex-wrap: wrap;
 }
 
 .personalProject-list-title{
@@ -206,6 +205,7 @@ width: 500px;
     width: 480px;
     height: 200px;
     object-fit: cover;
+    width: 50%;
 }
 
 .personalProject-detail{
@@ -215,6 +215,7 @@ width: 500px;
     position: relative;
     padding: 20px;
     text-align: center;
+    width: 50%;
 }
 
 .personalProject-description{
@@ -230,8 +231,8 @@ width: 500px;
 }
 
 .courses {
-    margin:10px;
-    width: 480px;
+    margin:1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -283,6 +284,7 @@ width: 500px;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -360,7 +362,9 @@ width: 500px;
 }
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    /*width: 100%;*/
+    flex:1; /*100% of width*/
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -371,4 +375,174 @@ width: 500px;
 
 .hero h3{
     padding-right: 150px;
+}
+
+/*Desktop first: we start in the biggest MQ*/
+
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .hero-image{
+        position:absolute;
+        z-index:1;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    h1{
+        font-size: 2em;
+        z-index:2;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .hero{
+        height: auto;
+        position: relative;
+    }
+
+    .hero-image{
+        position:absolute;
+        z-index:1;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+    }
+
+
+    h1{
+        font-size: 2em;
+        z-index:2;
+    }
+
+
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+    }
+
+    .header ol li{
+        height: 50px;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+
+    .personalProject{
+        display: block;
+    }
+    .personalProject-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .personalProject-imageContainer img{
+        max-width: 100%;
+    }
+
+    .personalProject-detail{
+        width: auto;
+        font-size: 10px;
+    }
+
+    .personalProject-title{
+        font-size: 1em;
+        margin-bottom: .3em;
+    }
+
+
+    .personalProject-url{
+        font-size: 1em;
+        margin: .4em 0;
+    }
+
+    .personalProject-description{
+        font-size: .8em;
+
+    }
+
+    .courses{
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .courses img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .personalProject-detail{
+        width: auto;
+        font-size: 12px;
+    }
+
+    .courses-detail{
+        /*1em=16px*/
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button{
+        margin: 1em auto;
+    }
+
+    .form-email h3{
+        margin-top: 0;
+    }
+
+    .footer {
+        display:block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    
+    h1{
+        font-size: 1.2em;
+        background: rgba(0,0,0,.5);
+    }
+
+    .hero{
+        padding: 2em;
+    }
+
 }
